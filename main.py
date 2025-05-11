@@ -39,7 +39,7 @@ def game():
         guessed_number=int(input("Guess a number: "))
         attempts=check_answer(guessed_number,answer,attempts)
         if attempts==0:
-            print("You are out of guesses... you lose!")
+            print(f"You are out of guesses... you lose!,answer is {answer}")
             return
         elif guessed_number != answer:
             print("Guess again")
